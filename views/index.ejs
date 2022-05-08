@@ -4,12 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
     <title>Playlist</title>
 </head>
 <body>
-    <h1>hello EJS</h1>
 
-    <a href="/admin">Administração</a>
+    <nav>
+        <ul>
+            <li>
+                <a href="/admin">Administração</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section id="player">
+
+        <h1>Playlist Caio Gomes</h1>
+
+        <div>
+            <img id="currentImg" src="/img/musicoff" alt="">
+            <h2 id="currentName">Titulp</h2>
+            <p id="currentArtist">Artista</p>
+        </div>
+
+    </section>
+
+
+    
+
+    
 
     
         <% playlist.forEach((music)=> {  %>
