@@ -6,20 +6,20 @@ const musicSchema = new mongoose.Schema({
     require: true,
   },
 
-  Author: {
+  author: {
     type: String,
     require: true,
   },
 
-  name: {
-    linkImage: String,
+  linkImage: {
+    type: String,
     require: true,
   },
 
-  name: {
-    linkMusic: String,
+  linkMusic: {
+    type: String,
     require: true,
   },
 });
 
-module.exports = mongooaw.model("Music", musicSchema);
+module.exports = mongoose.model("music", musicSchema);
